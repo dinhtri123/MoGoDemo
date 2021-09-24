@@ -1,0 +1,128 @@
+.blog{
+    text-align:center;
+    padding:50px 0px;
+    h3{
+        font-size:24px;
+        color:$Black;
+        font-family:$fontSecondary;
+    }
+    h2{
+        font-family: $fontPrimary;
+        font-size: 30px;
+        color:$Black;
+        margin-top:20px;
+        font-weight:bold;
+        position: relative;
+        &:before{
+            content:'';
+            position: absolute;
+            bottom: -40px;
+            left:50%;
+            transform:translateX(-50%);
+            width: 60px;
+            height:3px; 
+            border-radius:10px;
+            background-color: $Red;
+        }
+    }
+    &__content{
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-family: $fontPrimary;
+        flex-wrap: wrap;
+        position: relative;
+        &-1, &-2, &-3{
+            flex-basis:31.5%;
+            display: flex;
+            flex-direction:column;
+            align-items: flex-start;
+            position: relative;
+            &-img{
+                width:100%;
+                height: 245px;
+                img{
+                    width:100%;
+                    height:100%;
+                    object-fit: cover;
+                }
+            }
+            &-month{
+                width: 60px;
+                height:65px;
+                background: $blueLight;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                position: absolute;
+                top:170px;
+                left: -10px;
+
+                p{
+                    font-size: 24px;
+                    color:$White;
+                    font-weight:bold;
+                }
+                span{
+                    font-size:14px;
+                    color:$White;
+                    font-style: italic;
+
+                }
+            }
+            h3{
+                font-family: $fontPrimary;
+                color:$Black;
+                font-size:14px;
+                margin-top:15px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            &-desc{
+                font-size:15px;
+                color:$grayLight;
+                margin-top:15px;
+                line-height: 20px;
+                text-align: left;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+            }
+            &-viewer{
+                margin-top:30px;
+                display:flex;
+                &-eyes{
+                    
+                    margin-right: 20px;
+                    i{
+                        font-size:16px;
+                        color:$blueLight;
+                        margin-right:5px;
+                    }
+                    
+                    span{
+                        font-size:14px;
+                        color:$grayLight;
+                        font-style:italic;
+                    }
+                }
+                &-cmt{
+                    
+                    i{
+                        font-size:16px;
+                        color:$blueLight;
+                        margin-right:5px;
+                    }
+                    span{
+                        font-size:14px;
+                        color:$grayLight;
+                        font-style:italic;
+                    }
+                }
+            }
+        }
+    }
+}
