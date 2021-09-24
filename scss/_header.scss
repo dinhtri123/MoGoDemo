@@ -245,7 +245,10 @@
     
     }
 }
-
+#btn_search{
+    display:flex;
+    align-items: center;
+}
 #input_search{
     position: fixed;
     top:0px;
@@ -307,7 +310,7 @@
     outline:none;
     cursor: pointer;
     i{
-        font-size:20px;
+        font-size:22px;
     }
 }
 // btn close
@@ -406,5 +409,21 @@
     }
     #input_search i{
         transform: translateX(-50px);
+    }
+}
+@media screen and (max-width:499px) {
+    .header__banner h1{
+        font-size: 50px;
+    }
+    .header__banner h3{
+        font-size:35px;
+    }
+    .header__banner--number{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .header__banner--number-1, .header__banner--number-2, .header__banner--number-3, .header__banner--number-4{
+        flex-basis: 45%;
+        margin-bottom: 40px;
     }
 }
